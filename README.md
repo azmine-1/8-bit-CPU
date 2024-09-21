@@ -73,3 +73,9 @@ LDA 0x10      ; Load accumulator with value from address 0x10
 ADD 0x11      ; Add value from address 0x11 to accumulator
 STA 0x12      ; Store result from accumulator into address 0x12
 HLT           ; Halt the CPU
+```
+### Project TODOs
+
+- Test CPU in Quartus
+- Add HALT instruction
+- Add subroutine capabilities
