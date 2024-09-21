@@ -69,10 +69,21 @@ Conditional jump instructions alter the flow of execution based on flag values. 
 ### Example Program
 
 ```asm
-LDA 0x10      ; Load accumulator with value from address 0x10
-ADD 0x11      ; Add value from address 0x11 to accumulator
-STA 0x12      ; Store result from accumulator into address 0x12
-HLT           ; Halt the CPU
+LDA 130
+SUB 132
+JZ  8
+JMP 2
+LDA 130
+ADD 131
+STA 128
+LDA 129
+SHL
+SHL
+SHL
+SHL
+IOR 128
+STA 133
+HLT
 ```
 ### Project TODOs
 
